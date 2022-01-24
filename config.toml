@@ -55,8 +55,7 @@ pygmentsStyle = "monokai"
   ordersectionsby = "weight"
   # Change default color scheme with a variant one. Can be "red", "blue", "green".
   themeVariant = "mine"
-  # Provide a list of custom css files to load relative from the `static/` folder in the site root.
-  custom_css = ["css/theme-mine.css"]
+  
 
 
 # For search functionality
