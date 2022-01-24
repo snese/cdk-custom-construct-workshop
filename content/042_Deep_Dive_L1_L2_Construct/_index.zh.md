@@ -13,7 +13,7 @@ AWS CDK Code (TS)
 new s3.CfnBucket(this, 'L1bucket');
 ```
 
-CloudFormation Generate by cdk synthesize (synth)
+Synthesizes and prints the CloudFormation template for the specified stack(s) by cdk synthesize (synth)
 ```yaml
 Resources:
   L1bucket:
@@ -29,7 +29,7 @@ AWS CDK Code (TS)
 new s3.Bucket(this, 'L2bucket');
 ```
 
-CloudFormation Generate by cdk synthesize (synth)
+Synthesizes and prints the CloudFormation template for the specified stack(s) by cdk synthesize (synth)
 ```yaml
 Resources:
   L2bucket6B7A9881:
