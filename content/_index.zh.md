@@ -12,7 +12,7 @@ Constructs 是 AWS CDK 應用程序的基本構建塊。Constructs 表示 “clo
 Constructs 是構造編程模型 (Construct Programming Model, CPM) 的一部分，也被其他工具使用，例如用於 Terraform 的 CDK (CDKtf)、用於 Kubernetes 的 CDK (CDK8s) 和 Projen。
 {{% /notice %}}
 
-Construct 可以表示單個 AWS 資源，例如 Amazon Simple Storage Service (Amazon S3) 存儲桶(bucket)，也可以是由多個 AWS 相關資源組成的更高級別的抽象。此類組件的示例包括具有相關計算能力的工作隊列，或具有監控資源和儀表板的計劃作業。
+Construct 可以表示單個 AWS 資源，例如 Amazon Simple Storage Service (Amazon S3) 存儲桶(bucket)，也可以是由多個 AWS 相關資源組成的更高級別的抽象。此類組件的範例包括具有相關計算能力的工作隊列，或具有監控資源和儀表板的計劃作業。
 
 AWS CDK 包含一組稱為 AWS Construct Library 的構造，其中包含每個 AWS 服務的構造。 [Construct Hub](https://constructs.dev/search?q=&cdk=aws-cdk&cdkver=2&sort=downloadsDesc&offset=0) 是一種資源，可幫助您從 AWS、第三方和開源 CDK 社區發現其他構造。
 

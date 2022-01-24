@@ -172,6 +172,6 @@ public class MyEcsConstructStack : Stack
 - [AWS::IAM::Role](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-role.html)
 - [AWS::Logs::LogGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-loggroup.html)
 
-我們不要忘記 ... 這些都是在 IDE 或編輯器中以程式碼的形式完成！
+不要忘記 ... 這些都是在 IDE 或編輯器中以程式碼的形式完成！
 
 ![CodeCompletion](../images/04102.png)

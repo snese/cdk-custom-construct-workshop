@@ -40,7 +40,7 @@ pygmentsStyle = "monokai"
   disableShortcutsTitle = true
   # If set to false, a Home button will appear below the search bar on the menu.
   # It is redirecting to the landing page of the current language if specified. (Default is "/")
-  disableLandingPageButton = false
+  disableLandingPageButton = true
   # When using mulitlingual website, disable the switch language button.
   disableLanguageSwitchingButton = true
   # Hide breadcrumbs in the header and only show the current page title
@@ -54,7 +54,7 @@ pygmentsStyle = "monokai"
   # Order sections in menu by "weight" or "title". Default to "weight"
   ordersectionsby = "weight"
   # Change default color scheme with a variant one. Can be "red", "blue", "green".
-  themeVariant = "aws"
+  themeVariant = "mine"
   # Provide a list of custom css files to load relative from the `static/` folder in the site root.
   #custom_css = ["css/foo.css", "css/bar.css"]
   # Change the title separator. Default to "::".
