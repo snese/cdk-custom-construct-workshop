@@ -4,7 +4,7 @@ chapter: false
 weight: 45
 ---
 
-## Create new `cdk` project for testing
+## 建立新 CDK 專案進行測試驗證
 
 ```bash
 mkdir demo-project
@@ -12,27 +12,27 @@ cd demo-project
 cdk init -l typescript
 ```
 
-## Install package from your own GitHub npm
+## 從你的 GitHub npm 安裝 Package
 
-複製上層的資料夾內的 **.npmrc** 到此資料夾中
+使用 [發佈到 GitHub npm](044_publish.html#輸出範例.html) 完成的成果，從上層資料夾內的 **.npmrc** 複製到此資料夾中
 
 ```bash
 cp ../.npmrc ./
 ```
 
-請確定當資料夾下的 **.npmrc** 格式為下
+確認資料夾內的 **.npmrc** 格式為下
 ```bash
 cat .npmrc
 @neilkuan:registry=http://npm.pkg.github.com/
 //npm.pkg.github.com/:_authToken=ghp_oxxxxxxxxxxxxxxxxxxxxx
 ```
 
-從 GitHub npm repository install your custom construct library
+從 GitHub npm repository 安裝你的 custom construct library
 ```bash
 npm install @github-username/project-name
 ```
 
-## Import your own custom construct
+## 引入你的 Custom Construct
 
 ```tsx
 import { Stack, StackProps } from 'aws-cdk-lib';
@@ -48,21 +48,12 @@ export class DemoCdkStack extends Stack {
 }
 ```
 
-## Deploy the construct
+## 部署你的 Custom Construct
 
-synth
 ```bash
-cdk synth 
-```
+# synth - Synthesizes and prints the CloudFormation template for the specified stack(s)
+cdk synth
 
-diff
-```bash
-cdk diff 
+# deploy - Deploys the specified stack(s)
+cdk deploy
 ```
-
-deploy
-```bash
-cdk deploy 
-```
-
-## *load testing

@@ -16,7 +16,7 @@ AWS Cloud Development Kit (CDK) 讓您可以在雲中構建可靠、可擴展、
 
 - 將您的 AWS 資源連接在一起（甚至跨 stacks）並使用簡單、面向意圖的 API 授予權限。
 
-- 匯入現有 AWS CloudFormation 模板，為您的資源提供 CDK API。
+- 引入現有 AWS CloudFormation 模板，為您的資源提供 CDK API。
 
 - 使用 AWS CloudFormation 的強大功能以可預測的方式重複執行基礎設施部署，並在出錯時回滾。
 

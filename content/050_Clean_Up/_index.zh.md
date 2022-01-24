@@ -4,10 +4,9 @@ chapter: false
 weight: 0
 ---
 
-# CLEAN UP RESOURCES
-
-### Delete the Stack
+## 刪除以部署的 Stack
 
 ```bash
+# destroy - Destroys the specified stack(s)
 cdk destory
 ```

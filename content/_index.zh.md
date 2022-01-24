@@ -26,7 +26,7 @@ AWS CDK Constructs 是可重用、可組合的模塊，用於封裝資源和 AWS
 
 ### 我會學到什麼？
 
-您將在此 Workshop 了解 AWS CDK 是什麼，釐清 CDK Constructs 之間的關聯和 L1 以及 L2 Construct 的差異，並且了解如何做一個屬於你或是團隊專用的 Custom Constructs，並發布到 GitHub npm 上
+您將在此 Workshop 了解 AWS CDK 是什麼，釐清 CDK Constructs 之間的關聯和 L1 以及 L2 Construct 的差異，並且了解如何做一個屬於你或是團隊專用的 Custom Constructs，並發佈到 GitHub npm 上
 
 ### 要求的學習水平是多少？
 

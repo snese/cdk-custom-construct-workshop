@@ -4,29 +4,32 @@ chapter: false
 weight: 44
 ---
 
-## 建立 GitHub personal access token
+## 建立 GitHub Personal access tokens (PATs)
 
-- 請參考 GitHub 文件，建立個人用的 Personal access tokens (PATs)
-  - [Creating a personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
-- PATs 需要的權限為:
-    - repo:* 
-    - write:packages 📦
-    - read:packages  📦 
-    - (optional:  delete:packages 📦)
+請參考 GitHub 文件 [Creating a personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)，建立個人用的 Personal access tokens (PATs)
+
+其中 PATs 需要的權限為:
+- repo:* 
+- write:packages 📦
+- read:packages  📦 
+- (optional:  delete:packages 📦)
     
-    ![Untitled](images/04401.png)
+![Untitled](images/04401.png)
     
 
-## Publish package to github npm repository
+## 發佈 Package 到 GitHub npm repository
 
-- 設定 **.npmrc** 檔案，讓 npm 知道你要發布到 **GitHub npm repository**
+首先需要設置 **.npmrc** 檔案，讓 npm 知道你要發佈到 **GitHub npm repository**
 
-{{% notice note %}}
-在執行 yarn build 且測試都成功通過後，你將會看到，dist 會有 js 資料夾內，將會有準備好發布的 node package library
-{{% /notice %}}
+
+接著執行 **yarn build** 且待測試都成功通過後，將會看到 **dist** 會裡面有 **js** 資料夾且已經內含有準備好發佈的 node package library
+
 
 ```bash
+# command
 ls -R dist/
+
+# result
 dist/:
 js
 
@@ -35,10 +38,11 @@ github-username@0.0.0.jsii.tgz
 ```
 
 {{% notice tip %}}
-發布到 GitHub npm repository 需要的 Git PAT TOKEN.請將其設定在環境變數中。
+發佈到 GitHub npm repository 需要的 Git PAT TOKEN.請將其設定在環境變數中。
 {{% /notice %}}
 
 ```bash
+export GITHUB_USERNAME=REPACE_GITHUB_USERNAME
 export NPM_TOKEN=REPACE_GITHUB_PAT_TOKEN
 ```
 
@@ -48,8 +52,8 @@ export NPM_TOKEN=REPACE_GITHUB_PAT_TOKEN
 
 ```bash
 touch .npmrc
-echo "@REPACE_GITHUB_USERNAME:registry=http://npm.pkg.github.com/" >> .npmrc
-echo "//npm.pkg.github.com/:_authToken=REPACE_GITHUB_PAT_TOKEN" >> .npmrc
+echo "@$GITHUB_USERNAME:registry=http://npm.pkg.github.com/" >> .npmrc
+echo "//npm.pkg.github.com/:_authToken=$NPM_TOKEN" >> .npmrc
 ```
 
 ### 輸出範例
@@ -59,13 +63,9 @@ cat .npmrc
 //npm.pkg.github.com/:_authToken=ghp_oxxxxxxxxxxxxxxxxxxxxx
 ```
 
-- 發布之前可以修改 **package.json** 內的 **version** 來指定發布的版本。
-- 發布到 **GitHub npm repository**
+Package 的版本號是與 **package.json** 內的 **version** 連動，所以可以靠修改 **version** 來指定欲發佈的版本。
 
-{{% notice tip %}}
-release tag by change package.json **version**，發佈 version 將會跟著 package.json 內的 version
-{{% /notice %}}
-
+最後執行下列指令，便可以發佈到 **GitHub npm repository**
 ```bash
 yarn release
 ```

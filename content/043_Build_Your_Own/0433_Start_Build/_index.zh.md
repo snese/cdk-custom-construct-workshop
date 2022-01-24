@@ -122,7 +122,7 @@ app.synth();
 重頭戲來了，開始進行測試部署。
 
 {{% notice warning %}}
-為了避免發生權限問題，請記得設定 aws configure !!!
+為了避免發生權限問題，請記得使用 aws configure 設置
 {{% /notice %}}
 
 ```bash
