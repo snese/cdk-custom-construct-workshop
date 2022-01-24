@@ -4,7 +4,7 @@ chapter: false
 weight: 0
 ---
 
-## 刪除以部署的 Stack
+## 刪除已部署的 Stack
 
 ```bash
 # destroy - Destroys the specified stack(s)
