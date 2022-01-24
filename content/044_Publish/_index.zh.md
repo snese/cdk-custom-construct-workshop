@@ -19,7 +19,7 @@ weight: 44
 
 ## Publish package to github npm repository
 
-- 設定 `npmrc` file，讓 npm 知道你要發布到 `GitHub npm repository`
+- 設定 **.npmrc** 檔案，讓 npm 知道你要發布到 **GitHub npm repository**
 
 {{% notice note %}}
 在執行 yarn build 且測試都成功通過後，你將會看到，dist 會有 js 資料夾內，將會有準備好發布的 node package library
@@ -43,7 +43,7 @@ export NPM_TOKEN=REPACE_GITHUB_PAT_TOKEN
 ```
 
 {{% notice note %}}
-創建 `.npmrc` 設定檔，為了指定的 npm scope library 從 GitHub npm repository 讀取。
+創建 **.npmrc** 設定檔，指定的 **npm scope library** 從 **GitHub npm repository** 讀取。
 {{% /notice %}}
 
 ```bash
