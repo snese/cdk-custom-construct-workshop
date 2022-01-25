@@ -14,14 +14,20 @@ cdk init -l typescript
 
 ## 從你的 GitHub npm 安裝 Package
 
-使用 [發佈到 GitHub npm](044_publish.html#輸出範例.html) 完成的成果，從上層資料夾內的 **.npmrc** 複製到此資料夾中
+使用 [發佈到 GitHub npm](044_publish.html#輸出範例.html) 完成的成果，從上層資料夾內的 **.npmrc** 複製到此資料夾中，
+[此步驟為了省去再做一次，創建 **.npmrc** 的動作]({{< ref "/044_publish#建立-npm-設定檔" >}})
 
 ```bash
 cp ../.npmrc ./
 ```
 
 確認資料夾內的 **.npmrc** 格式為下
+{{% notice warning %}}
+**注意此為釋出範例！！！**
+{{%  /notice %}}
+
 ```bash
+# 注意此為釋出範例！！！
 cat .npmrc
 @neilkuan:registry=http://npm.pkg.github.com/
 //npm.pkg.github.com/:_authToken=ghp_oxxxxxxxxxxxxxxxxxxxxx

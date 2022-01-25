@@ -46,6 +46,8 @@ export GITHUB_USERNAME=REPACE_GITHUB_USERNAME
 export NPM_TOKEN=REPACE_GITHUB_PAT_TOKEN
 ```
 
+
+### 建立 npm 設定檔
 {{% notice note %}}
 創建 **.npmrc** 設定檔，指定的 **npm scope library** 從 **GitHub npm repository** 讀取。
 {{% /notice %}}

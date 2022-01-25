@@ -8,6 +8,9 @@ weight: 43
 
 完整的 CDK Demo construct 專案，請參閱 [neilkuan/cdk-demo-construct](https://github.com/neilkuan/cdk-demo-construct)
 
+{{% notice warning %}}
+請注意此 demo project 使用的是 AWSCDK V1 版本。
+{{%  /notice %}}
 ### index.ts
 
 ```tsx
