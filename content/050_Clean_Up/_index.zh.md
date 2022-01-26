@@ -8,5 +8,5 @@ weight: 0
 
 ```bash
 # destroy - Destroys the specified stack(s)
-cdk destory
+cdk destroy
 ```
