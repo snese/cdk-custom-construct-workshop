@@ -38,7 +38,7 @@ https://gitpod.io/#https://github.com/neilkuan/cdk-construct-demo
 想多了解 Gitpod 也能參考 [Gitpod Screencast 01: Getting started with Gitpod 🍊 ](https://www.youtube.com/watch?v=w65POyu3ZUQ) 的影片。
 {{% /notice %}}
 
-![Untitled](images/04303.png)
+![Untitled](../images/04303.png)
 
 {{% notice note %}}
 先前沒有使用過 **Gitpod** 的用戶，可以透過 GitHub account 進行OAuth login
